@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的第一个网页</title>
+</head>
+<body>
+    <h1>欢迎来到我的网页！</h1>
+    <p>这是我通过Github Pages部署的第一个静态页面。</p>
+    <p>当前时间：<span id="currentTime"></span></p>
+    <script>
+        // 用JavaScript动态显示时间（可选，展示交互）
+        function updateTime() {
+            const timeElement = document.getElementById('currentTime');
+            timeElement.textContent = new Date().toLocaleString();
+        }
+        setInterval(updateTime, 1000); // 每秒更新一次
+    </script>
+</body>
+</html>
